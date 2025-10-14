@@ -92,8 +92,7 @@ Extract all line items from the bill. If you cannot determine exact values, use 
     }
 
     const billData = JSON.parse(jsonMatch[0]);
-
-    // Return parsed data to frontend
+    console.log("Successfully parsed bill:", { billData });
     res.status(200).json({
       success: true,
       billData,
